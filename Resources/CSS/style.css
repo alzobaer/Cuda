@@ -1,0 +1,603 @@
+/*==============================
+BASIC SETUP
+================================*/
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'titillium web', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/*===========================================
+NAVIGATION and HOME SECTION
+===========================================*/
+#navi{
+    background: #87509c;
+    height: 85vh;
+}
+#navi .navbar{
+    background: #87509c;
+    opacity: 1;
+    padding: .7rem;
+    margin-bottom: 0;
+}
+#navi img{
+    height: 3.8rem;
+    width: auto;
+    
+}
+#navi .navbar button{
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+#navi ul li{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+#navi ul li:first-child{
+    margin-left: 0;
+}
+#navi #home h1{
+    margin-top: 22rem;
+    font-size: 4.216rem;
+    color: #ffffff;
+}
+#navi ul li a:link, #navi ul li a:visited{
+    background: rgba(100,58,121,0);
+    border-radius: .4rem;
+    color: #ffffff;
+    padding: 2.5px 12px;
+}
+#navi ul li a:hover, #navi ul li a:hover{
+    background: rgba(100,58,121,1);
+    border-radius: .4rem;
+    color: #ffffff;
+    padding: 2.5px 12px;
+}
+.active{
+    background: rgba(100,58,121,1);
+    border-radius: .4rem;
+}
+#navi #home button{
+    background: #eb7d4b;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-radius: .3rem;
+    height: 5rem;
+    width: 18rem;
+    margin-top: 4rem;
+    border: 0;
+    border: .1rem solid #3c85f2;
+    border-bottom: .5rem solid #c86a40;
+}
+/*===========================================
+STIKY SECTION
+===========================================*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #87509c;
+    z-index: 1000;
+}
+/*===========================================
+SERVICES SECTION
+===========================================*/
+#services{
+    background: #17c2a4;
+    color: #fff;
+}
+#services h2{
+    margin-top: 1rem;
+    font-size: 4.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+#services p{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+#services h2::after{
+    content: "";
+    display:block;
+    height: .4rem;
+    width: 8rem;
+    background: #14a58c;
+    margin: auto;
+    margin-top: 1.8rem;
+}
+#services h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+}
+#services .row img{
+    margin-bottom: 6rem;
+    margin-top: 0;
+    height: 13rem;
+    width: 11rem;
+}
+#services p{
+    font-size: 1.8rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 8rem;
+}
+/*===========================================
+ TEAM SECTION
+===========================================*/
+#team{
+    background: #e7f1f8;
+}
+#team h2{
+    color: #3c4761;
+    margin-top: 1rem;
+    font-size: 4.129rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+#team .heading p{
+    font-size: 1.858rem;
+    color: #3c4761;
+}
+#team img{
+    height: 20rem;
+    width: 20rem;
+}
+#team h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8rem;
+    background: #c8d9e5;
+    margin: auto;
+    margin-top: 1.8rem;
+}
+#team h3{
+    margin-top: 3rem;
+    color: #3c4761;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+}
+#team .link p{
+    font-size: 1.6rem;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+#team .link a p{
+    color: #30bae7;
+}
+#team p{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+#team .p-sizing{
+    height: 14rem;
+    text-align: center;
+}
+#team a:hover{
+    text-decoration: none;
+}
+#team img{
+    margin-top: 3rem;
+}
+#team .icons ul li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+#team .icons .fa, .fab{
+    color: #ffffff;
+    background: #bdd1df;
+    height: 3rem;
+    width: 3rem;
+    padding: .5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 4rem;
+
+}
+#team .fa:hover, .fab:hover{
+    background: #000;
+    transform: rotate(360deg);
+    transition: .6s;
+}
+/*===========================================
+ SKILL SECTION
+===========================================*/
+#skill{
+    background: #ffffff;
+    color: #3c4761;
+}
+#skill h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+#skill h2::after{
+    content: "";
+    display:block;
+    height: .4rem;
+    width: 8rem;
+    background: #dfe8ed;
+    margin: auto;
+    margin-top: 1.8rem;
+}
+#skill p{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 18rem;
+}
+#skill h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+#skill .round-1, .round-2, .round-3, .round-4{
+    margin-bottom: 0;
+}
+/*===========================================
+ PORTFOLIO SECTION
+===========================================*/
+#portfolio{
+    background: #ffdd99;
+}
+#portfolio h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    color: #393939;
+    margin-top: 5rem;
+}
+#portfolio h2::after{
+    content: "";
+    display:block;
+    height: .4rem;
+    width: 8rem;
+    background: #e5c37f;
+    margin: auto;
+    margin-top: 1.8rem;
+}
+#portfolio .portfolio-intro p{
+    font-size: 1.8rem;
+    width: 50%;
+    margin-left: 25%;
+    color: #393939;
+}
+#portfolio button{
+    text-transform: uppercase;
+    background: #ebc985;
+    height: 3.5rem;
+    width: 8rem;
+    border: 0;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    margin: 0.7rem;
+    margin-bottom: 5rem;
+    transition: .5s;
+    display: inline-block;
+    outline: none;
+}
+#portfolio .active, #portfolio button:hover{
+    background: #ffffff;
+    transition: .1s;
+}
+#portfolio .container img{
+    height: auto;
+    width: 100%;
+}
+#portfolio .port p{
+    font-size: 1.8rem;
+    color: #393939;
+    margin-top: 1.5rem;
+    margin-bottom: 4.5rem;
+}
+
+/*===========================================
+ Testimonial SECTION
+===========================================*/
+#testimonial{
+    background: #d74680;
+}
+#testimonial h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.6rem;
+    margin-top: 7rem;
+}
+#testimonial h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8rem;
+    background: #b73c6d;
+    margin: auto;
+    margin-top: 1.8rem;
+}
+#testimonial p{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+#testimonial .client-photo{
+    float: left;
+}
+#testimonial .client-photo img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+#testimonial .p-2{
+    height: 15rem;
+    width: auto;
+    margin-left: 13.5rem;
+}
+
+#testimonial .individuals p{
+    font-size: 2.1rem;
+    color: #ffffff;
+    margin-top: 0;
+}
+#testimonial .individuals h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+#testimonial .individuals .post{
+    color: #fac996;
+    font-size: 1.8rem;
+    margin-top: -0.5rem;
+}
+/*===========================================
+ CONTACT SECTION
+===========================================*/
+#contact{
+    background: #3c5499;
+}
+#contact h2{
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 7rem;
+}
+#contact h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8rem;
+    background: #273a71;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+#contact p{
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+#contact form{
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 3rem;  
+}
+#contact .name input[type="text"], #contact .email input[type="email"], #contact .textArea textarea{
+    background: #273a71;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    border: .2rem solid #773c99;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    color: #ffffff;
+}
+#contact form ::placeholder{
+    color: #ffffff;
+    opacity: 1;
+}
+#contact form .btn-message{
+    background: #30bae7;
+    margin-top: 4rem;
+    padding: 1.5rem 6rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    color: #ffffff;
+    opacity: 1;
+    font-weight: 500;
+    margin-bottom: 6rem;
+    border: 0;
+    border-bottom: 0.4rem solid #299ec5;
+}
+/*===========================================
+ FOOTER SECTION
+===========================================*/
+
+#footer{
+    background: #344b8e;
+}
+#footer ul li{
+    display: inline-block;
+    font-size: 2.4rem;
+    padding: 3rem;
+}
+#footer li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+#footer ul li a:hover{
+    color: #30bae7;
+}
+
+
+/*===========================================
+ RESPONSIVENESS
+===========================================*/
+@media only screen and (max-width: 2100px){
+    #navi{
+        height: 55vh;
+    }
+    #navi #home h1{
+        margin-top: 15rem;
+    }
+}
+@media only screen and (max-width: 1600px){
+    #navi{
+        height: 85vh;
+    }
+    #navi #home h1{
+        margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #testimonial .p-2{
+        margin-left: 10rem;
+        margin-right: 5rem;
+    }
+    #navi{
+        height: 85vh;
+    }
+    #navi #home h1{
+        margin-top: 10rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #navi{
+        height: 85vh;
+    }
+    html{
+        font-size: 60%;   
+    }
+    #testimonial .client-photo{
+        width: 100%;
+        text-align: left;
+        margin-left: 3rem;
+    }
+    #testimonial .p-2{
+        margin-left: 3rem;
+        text-align: left;
+        height: 23rem;
+        margin-right: 0;
+        justify-content: center;
+    }
+    #contact form{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 980px){
+    #navi{
+        height: 85vh;
+    }
+    html{
+        font-size: 62%;   
+    }
+    #contact form{
+        width: 100%;
+        margin-left: 0%;
+    }
+    #navi #home h1{
+        margin-top: 18rem;
+    }
+    #testimonial .client-photo{
+        width: 100%;
+        text-align: left;
+        margin-left: 0rem;
+    }
+    #testimonial .p-2{
+        margin-left: 0rem;
+        text-align: left;
+        height: 23rem;
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #navi{
+        height: 85vh;
+    }
+    #navi img{
+        height: 3rem;
+        width: auto;
+    }
+    #navi .navbar button{
+        font-size: 2rem;
+        margin: 0rem;
+    }
+    #navi ul li{
+        font-size: 2.5rem;
+        padding: 1rem 0rem;
+        margin-left: 0;
+    }
+    #navi .navbar .nav-item{
+        margin-left: 5rem;
+    }
+    #navi h1{
+        font-size: 40%;
+    }
+}
+@media only screen and (max-width: 480px){
+    html{
+        font-size: 60%;   
+    }
+    #navi{
+        height: 70vh;
+    }
+    #testimonial .client-photo{
+        width: 100%;
+        text-align: center;   
+    }
+    #navi #home h1{
+        margin-top: 8rem;
+        font-size: 300%;
+    }
+    #portfolio .portfolio-intro p{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #testimonial .p-2{
+        margin-left: 5rem;
+        text-align: left;
+        height: 23rem;
+        margin-right: 0;
+        justify-content: center;
+    }
+    #footer ul li{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}

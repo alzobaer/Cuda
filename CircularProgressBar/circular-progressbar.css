@@ -1,0 +1,18 @@
+#skill {
+    text-align: center;   
+  }
+  #skill .round-1, .round-2, .round-3, .round-4{
+    min-height: 15rem;
+    position: relative;
+  }
+  #skill .round-1 strong, .round-2 strong, .round-3 strong, .round-4 strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -3rem;
+    transform: translate(-50%);
+    font-size: 4rem;
+    color: #3c4761;
+    font-weight: 100;
+  }
+  
